@@ -24,7 +24,6 @@ class MenuViewController: UIViewController {
         arrIcon = ["perfil", "idiomas", "puntuacian", "evalua_la_app", "soporte", "accesso"]
         
         table_View.tableFooterView = UIView()
-        
     }
     
 }

@@ -146,7 +146,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wd-1k-3Ge" customClass="MBCircularProgressBarView">
-                                <rect key="frame" x="107.5" y="97" width="160" height="156"/>
+                                <rect key="frame" x="107.5" y="92" width="160" height="156"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ul4-qE-GTj">
                                         <rect key="frame" x="30" y="28" width="100" height="100"/>
@@ -245,7 +245,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRu-hO-fJ8" customClass="MBCircularProgressBarView">
-                                <rect key="frame" x="107.5" y="300" width="160" height="156"/>
+                                <rect key="frame" x="107.5" y="295" width="160" height="156"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8U1-NM-hgu">
                                         <rect key="frame" x="30" y="28" width="100" height="100"/>
@@ -338,13 +338,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STUDIED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogk-ZZ-zJV">
-                                <rect key="frame" x="157" y="278" width="61" height="17"/>
+                                <rect key="frame" x="157" y="273" width="61" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yac-kb-iRL" customClass="MBCircularProgressBarView">
-                                <rect key="frame" x="107.5" y="503" width="160" height="156"/>
+                                <rect key="frame" x="107.5" y="498" width="160" height="156"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUq-xa-EyW">
                                         <rect key="frame" x="30" y="28" width="100" height="100"/>
@@ -437,7 +437,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4c-jk-eSI">
-                                <rect key="frame" x="171.5" y="481" width="32" height="17"/>
+                                <rect key="frame" x="171.5" y="476" width="32" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -457,7 +457,7 @@
                             <constraint firstItem="Yac-kb-iRL" firstAttribute="centerX" secondItem="a8l-pS-i3t" secondAttribute="centerX" id="i8A-L8-SqT"/>
                             <constraint firstItem="gRu-hO-fJ8" firstAttribute="top" secondItem="ogk-ZZ-zJV" secondAttribute="bottom" constant="5" id="iai-Yo-KRm"/>
                             <constraint firstItem="MBz-31-oLa" firstAttribute="centerX" secondItem="a8l-pS-i3t" secondAttribute="centerX" id="njx-Tl-DzH"/>
-                            <constraint firstItem="3wd-1k-3Ge" firstAttribute="top" secondItem="MBz-31-oLa" secondAttribute="bottom" constant="10" id="qqk-1B-HMG"/>
+                            <constraint firstItem="3wd-1k-3Ge" firstAttribute="top" secondItem="MBz-31-oLa" secondAttribute="bottom" constant="5" id="qqk-1B-HMG"/>
                             <constraint firstItem="3wd-1k-3Ge" firstAttribute="centerX" secondItem="a8l-pS-i3t" secondAttribute="centerX" id="rLS-j8-OL4"/>
                             <constraint firstItem="ogk-ZZ-zJV" firstAttribute="top" secondItem="3wd-1k-3Ge" secondAttribute="bottom" constant="25" id="rfZ-IL-VgJ"/>
                             <constraint firstItem="MBz-31-oLa" firstAttribute="top" secondItem="gc4-wt-u9m" secondAttribute="top" constant="50" id="rnm-zt-AHk"/>

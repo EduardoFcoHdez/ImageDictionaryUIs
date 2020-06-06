@@ -23,7 +23,6 @@ class ScoreViewController: UIViewController {
     @IBOutlet weak var viewTimeInner: UIView!
     @IBOutlet weak var lblTime: UILabel!
     
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -37,7 +36,6 @@ class ScoreViewController: UIViewController {
         
         self.viewTimeInner.layer.cornerRadius = self.viewTimeInner.frame.height / 2.0
         self.viewTimeInner.layer.masksToBounds = true
-
         
     }
     
