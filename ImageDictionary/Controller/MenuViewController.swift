@@ -50,8 +50,16 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let scoreViewController = self.storyboard?.instantiateViewController(withIdentifier: "ScoreViewController") as! ScoreViewController
-        self.navigationController?.pushViewController(scoreViewController, animated: true)
+        if indexPath.row == 0 {
+            
+            let scoreViewController = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+            self.navigationController?.pushViewController(scoreViewController, animated: true)
+            
+        } else if indexPath.row == 1 {
+            
+            let scoreViewController = self.storyboard?.instantiateViewController(withIdentifier: "ScoreViewController") as! ScoreViewController
+            self.navigationController?.pushViewController(scoreViewController, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

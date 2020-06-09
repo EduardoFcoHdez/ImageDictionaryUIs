@@ -14,6 +14,9 @@
 		7FFAC0CC248A720A00CCF843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFAC0CA248A720A00CCF843 /* LaunchScreen.storyboard */; };
 		7FFAC0D5248A722500CCF843 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFAC0D4248A722500CCF843 /* MenuViewController.swift */; };
 		7FFAC0D7248A723400CCF843 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFAC0D6248A723400CCF843 /* ScoreViewController.swift */; };
+		A8146833248FFB2B00AACC66 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8146832248FFB2B00AACC66 /* ProfileViewController.swift */; };
+		A8146836248FFC8F00AACC66 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8146835248FFC8F00AACC66 /* ImagePicker.swift */; };
+		A8382680248E64EE0031BB23 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A838267F248E64EE0031BB23 /* Extensions.swift */; };
 		A8752139248B6328002D7A1E /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8752138248B6328002D7A1E /* MenuCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		7FFAC0D4248A722500CCF843 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7FFAC0D6248A723400CCF843 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		9F4147413E01CE67D88F0194 /* Pods-ImageDictionary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageDictionary.debug.xcconfig"; path = "Target Support Files/Pods-ImageDictionary/Pods-ImageDictionary.debug.xcconfig"; sourceTree = "<group>"; };
+		A8146832248FFB2B00AACC66 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A8146835248FFC8F00AACC66 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A838267F248E64EE0031BB23 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A8752138248B6328002D7A1E /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +79,8 @@
 		7FFAC0C0248A720900CCF843 /* ImageDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				A8146834248FFC8100AACC66 /* Helper */,
+				A838267E248E64B80031BB23 /* Extensions */,
 				A8752137248B6300002D7A1E /* Cells */,
 				7FFAC0D3248A721200CCF843 /* Controller */,
 				7FFAC0C1248A720900CCF843 /* AppDelegate.swift */,
@@ -89,6 +97,7 @@
 			children = (
 				7FFAC0D4248A722500CCF843 /* MenuViewController.swift */,
 				7FFAC0D6248A723400CCF843 /* ScoreViewController.swift */,
+				A8146832248FFB2B00AACC66 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -100,6 +109,22 @@
 				09633F6470F8AC517A1F1D0E /* Pods-ImageDictionary.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A8146834248FFC8100AACC66 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A8146835248FFC8F00AACC66 /* ImagePicker.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A838267E248E64B80031BB23 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A838267F248E64EE0031BB23 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A8752137248B6300002D7A1E /* Cells */ = {
@@ -225,7 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8146833248FFB2B00AACC66 /* ProfileViewController.swift in Sources */,
+				A8382680248E64EE0031BB23 /* Extensions.swift in Sources */,
 				7FFAC0D5248A722500CCF843 /* MenuViewController.swift in Sources */,
+				A8146836248FFC8F00AACC66 /* ImagePicker.swift in Sources */,
 				7FFAC0C2248A720900CCF843 /* AppDelegate.swift in Sources */,
 				A8752139248B6328002D7A1E /* MenuCell.swift in Sources */,
 				7FFAC0D7248A723400CCF843 /* ScoreViewController.swift in Sources */,
