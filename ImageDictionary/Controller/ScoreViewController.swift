@@ -55,8 +55,8 @@ class ScoreViewController: UIViewController {
         
         //For Time Graph
         self.viewTime.maxValue = 6000.0
-        self.viewTime.value = 600.0
-        self.lblTime.text = "5"
+        self.viewTime.value = 1000.0
+        self.lblTime.text = "7"
         
     }
     
