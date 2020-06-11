@@ -37,6 +37,27 @@ class ScoreViewController: UIViewController {
         self.viewTimeInner.layer.cornerRadius = self.viewTimeInner.frame.height / 2.0
         self.viewTimeInner.layer.masksToBounds = true
         
+        calculateGraphValue()
+        
+    }
+    
+    func calculateGraphValue() {
+        
+        //For Learned Graph
+        self.viewLearned.maxValue = 6000.0
+        self.viewLearned.value = 600.0
+        self.lblLearned.text = "600"
+        
+        //For Study Graph
+        self.viewStudy.maxValue = 6000.0
+        self.viewStudy.value = 1200.0
+        self.lblStudy.text = "1200"
+        
+        //For Time Graph
+        self.viewTime.maxValue = 6000.0
+        self.viewTime.value = 600.0
+        self.lblTime.text = "5"
+        
     }
     
     //MARK: - Custom Method
