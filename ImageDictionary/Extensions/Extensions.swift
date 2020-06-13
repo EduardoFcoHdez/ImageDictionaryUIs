@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// For set upper corner radius of view
 extension UIView {
     
     func roundCorners(corners: UIRectCorner, radius: CGFloat) {
@@ -19,6 +20,7 @@ extension UIView {
     }
 }
 
+// For set corner radius, border width and border color of view
 extension UIView {
     
     @IBInspectable
@@ -57,55 +59,9 @@ extension UIView {
             }
         }
     }
-    
-    @IBInspectable
-    var shadowRadius: CGFloat {
-        get {
-            return layer.shadowRadius
-        }
-        set {
-            layer.shadowRadius = newValue
-        }
-    }
-    
-    @IBInspectable
-    var shadowOpacity: Float {
-        get {
-            return layer.shadowOpacity
-        }
-        set {
-            layer.shadowOpacity = newValue
-        }
-    }
-    
-    @IBInspectable
-    var shadowOffset: CGSize {
-        get {
-            return layer.shadowOffset
-        }
-        set {
-            layer.shadowOffset = newValue
-        }
-    }
-    
-    @IBInspectable
-    var shadowColor: UIColor? {
-        get {
-            if let color = layer.shadowColor {
-                return UIColor(cgColor: color)
-            }
-            return nil
-        }
-        set {
-            if let color = newValue {
-                layer.shadowColor = color.cgColor
-            } else {
-                layer.shadowColor = nil
-            }
-        }
-    }
 }
 
+// For get screen size
 extension UIScreen {
     
     enum SizeType: CGFloat {
@@ -128,6 +84,7 @@ extension UIScreen {
     }
 }
 
+// For set LayoutConstraint of view
 extension NSLayoutConstraint {
     
     func setMultiplier(multiplier:CGFloat) -> NSLayoutConstraint {

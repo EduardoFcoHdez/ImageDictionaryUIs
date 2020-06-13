@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class MenuViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     @IBOutlet weak var table_View: UITableView!
     
@@ -59,7 +59,26 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             
             let scoreViewController = self.storyboard?.instantiateViewController(withIdentifier: "ScoreViewController") as! ScoreViewController
             self.navigationController?.pushViewController(scoreViewController, animated: true)
+            
+        } else if indexPath.row == 2 {
+            
+            let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let popupVC = storyboard.instantiateViewController(withIdentifier: "LanguageSaveViewController")
+            popupVC.modalPresentationStyle = UIModalPresentationStyle .popover
+            popupVC.popoverPresentationController?.delegate = self
+            self.definesPresentationContext = true
+            self.present(popupVC, animated: true, completion: nil)
+            
+        } else if indexPath.row == 3 {
+            
+            let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let popupVC = storyboard.instantiateViewController(withIdentifier: "PurchaseLanguageViewController")
+            popupVC.modalPresentationStyle = UIModalPresentationStyle .popover
+            popupVC.popoverPresentationController?.delegate = self
+            self.definesPresentationContext = true
+            self.present(popupVC, animated: true, completion: nil)
         }
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
