@@ -18,7 +18,7 @@ class MenuViewController: UIViewController, UIPopoverPresentationControllerDeleg
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+                
         arrTitle = ["Perfil", "Idiomas", "Puntuacion", "Evalua la app", "Soporte", "Accesso completa"]
         
         arrIcon = ["perfil", "idiomas", "puntuacian", "evalua_la_app", "soporte", "accesso"]
@@ -64,18 +64,16 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             
             let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let popupVC = storyboard.instantiateViewController(withIdentifier: "LanguageSaveViewController")
-            popupVC.modalPresentationStyle = UIModalPresentationStyle .popover
-            popupVC.popoverPresentationController?.delegate = self
-            self.definesPresentationContext = true
+            popupVC.modalPresentationStyle = UIModalPresentationStyle .overFullScreen
+            //popupVC.popoverPresentationController?.delegate = self
             self.present(popupVC, animated: true, completion: nil)
             
         } else if indexPath.row == 3 {
             
             let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let popupVC = storyboard.instantiateViewController(withIdentifier: "PurchaseLanguageViewController")
-            popupVC.modalPresentationStyle = UIModalPresentationStyle .popover
-            popupVC.popoverPresentationController?.delegate = self
-            self.definesPresentationContext = true
+            popupVC.modalPresentationStyle = UIModalPresentationStyle .overFullScreen
+            //popupVC.popoverPresentationController?.delegate = self
             self.present(popupVC, animated: true, completion: nil)
         }
         

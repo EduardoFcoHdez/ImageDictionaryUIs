@@ -15,12 +15,18 @@ class LanguageSaveViewController: UIViewController {
     @IBOutlet weak var btnLearnLanguage: UIButton!
     @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var viewHeight: NSLayoutConstraint!
+    @IBOutlet weak var btnCross: UIButton!
+    @IBOutlet weak var btnNativeLanguageSec: UIButton!
+    @IBOutlet weak var btnLearnLanguageSec: UIButton!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+                
+        // Set Corner Radius of cross button
+        btnCross.layer.cornerRadius = btnCross.frame.width/2
+        btnCross.clipsToBounds = true
         
-        print(UIScreen.main.sizeType)
         // Set view height according to screen
         if UIScreen.main.sizeType == .iPhone5 {
             
@@ -48,10 +54,38 @@ class LanguageSaveViewController: UIViewController {
     
     @IBAction func nativeLanguage(_ sender: Any) {
         
+        btnNativeLanguage.setBackgroundImage(UIImage(named: "english_select"), for: .normal)
+        btnNativeLanguage.setTitle("English", for: .normal)
+        
+        btnNativeLanguageSec.setBackgroundImage(UIImage(named: "spanish_unselect"), for: .normal)
+        btnNativeLanguageSec.setTitle("Spanish", for: .normal)
     }
     
     @IBAction func learnLanguage(_ sender: Any) {
         
+        btnLearnLanguage.setBackgroundImage(UIImage(named: "spanish_select"), for: .normal)
+        btnLearnLanguage.setTitle("Spanish", for: .normal)
+        
+        btnLearnLanguageSec.setBackgroundImage(UIImage(named: "english_unselect"), for: .normal)
+        btnLearnLanguageSec.setTitle("English", for: .normal)
+    }
+    
+    @IBAction func nativeLanguageSec(_ sender: Any) {
+        
+        btnNativeLanguage.setBackgroundImage(UIImage(named: "english_unselect"), for: .normal)
+        btnNativeLanguage.setTitle("English", for: .normal)
+        
+        btnNativeLanguageSec.setBackgroundImage(UIImage(named: "spanish_select"), for: .normal)
+        btnNativeLanguageSec.setTitle("Spanish", for: .normal)
+    }
+    
+    @IBAction func learLanguageSec(_ sender: Any) {
+        
+        btnLearnLanguage.setBackgroundImage(UIImage(named: "spanish_unselect"), for: .normal)
+        btnLearnLanguage.setTitle("Spanish", for: .normal)
+        
+        btnLearnLanguageSec.setBackgroundImage(UIImage(named: "english_select"), for: .normal)
+        btnLearnLanguageSec.setTitle("English", for: .normal)
     }
     
     @IBAction func cross(_ sender: Any) {
