@@ -28,6 +28,7 @@ class MenuViewController: UIViewController, UIPopoverPresentationControllerDeleg
     
 }
 
+// For table view data source and delegate method
 extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

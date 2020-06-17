@@ -84,7 +84,8 @@ extension UIScreen {
     }
 }
 
-// For set LayoutConstraint of view
+// For set LayoutConstraint of view according to screen size
+// Set the view or other things and set multiplier according to screen size
 extension NSLayoutConstraint {
     
     func setMultiplier(multiplier:CGFloat) -> NSLayoutConstraint {
