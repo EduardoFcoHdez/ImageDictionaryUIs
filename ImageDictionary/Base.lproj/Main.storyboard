@@ -738,6 +738,8 @@
                         <outlet property="imgProfile" destination="aD2-tU-qqC" id="Dkd-go-bnp"/>
                         <outlet property="viewHeight" destination="qeh-VG-Fhn" id="CLb-oJ-sXL"/>
                         <outlet property="viewMain" destination="81e-Df-sad" id="9s6-CB-agz"/>
+                        <outlet property="viewMyLanguage" destination="81I-8J-xyb" id="Mqa-h9-fZD"/>
+                        <outlet property="viewMyLearning" destination="dUI-0Y-P8l" id="864-i6-OK6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sc5-pT-JpK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -826,6 +828,9 @@
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="save:" destination="Q7q-uw-U7u" eventType="touchUpInside" id="4Z0-a1-ENK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIJ-EA-wX8">
                                         <rect key="frame" x="177.5" y="63" width="150" height="100"/>
@@ -1008,6 +1013,9 @@
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="restorePurchase:" destination="FSY-Jc-PRb" eventType="touchUpInside" id="hJb-Sc-lcy"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have you purchased this app before?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzI-ol-dKS">
                                         <rect key="frame" x="20" y="257" width="260" height="48"/>
@@ -1069,6 +1077,7 @@
                     <connections>
                         <outlet property="btnCross" destination="ixg-5x-hKW" id="TQe-5Q-IRG"/>
                         <outlet property="btnLanguage" destination="Pwj-Ou-7Jd" id="1jN-38-HhJ"/>
+                        <outlet property="btnRestore" destination="4xr-Hk-rSI" id="k2r-JF-vWo"/>
                         <outlet property="viewHeight" destination="mxl-Gg-nla" id="nCY-4B-9ZM"/>
                         <outlet property="viewMain" destination="0sN-XU-xhp" id="ik8-gn-03y"/>
                     </connections>

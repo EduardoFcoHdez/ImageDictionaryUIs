@@ -27,6 +27,12 @@ class LanguageSaveViewController: UIViewController {
         btnCross.layer.cornerRadius = btnCross.frame.width/2
         btnCross.clipsToBounds = true
         
+        viewMain.layer.cornerRadius = 15
+        viewMain.clipsToBounds = true
+        
+        btnSave.layer.cornerRadius = 20
+        btnSave.clipsToBounds = true
+        
         // Set view height according to screen
         if UIScreen.main.sizeType == .iPhone5 {
             
@@ -93,4 +99,7 @@ class LanguageSaveViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func save(_ sender: Any) {
+        
+    }
 }

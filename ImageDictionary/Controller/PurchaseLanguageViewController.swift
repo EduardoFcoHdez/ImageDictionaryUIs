@@ -14,6 +14,7 @@ class PurchaseLanguageViewController: UIViewController {
     @IBOutlet weak var btnLanguage: UIButton!
     @IBOutlet weak var viewHeight: NSLayoutConstraint!
     @IBOutlet weak var btnCross: UIButton!
+    @IBOutlet weak var btnRestore: UIButton!
     
     override func viewDidLoad() {
         
@@ -22,6 +23,12 @@ class PurchaseLanguageViewController: UIViewController {
         // Set Corner Radius of cross button
         btnCross.layer.cornerRadius = btnCross.frame.width/2
         btnCross.clipsToBounds = true
+        
+        viewMain.layer.cornerRadius = 15
+        viewMain.clipsToBounds = true
+        
+        btnRestore.layer.cornerRadius = 20
+        btnRestore.clipsToBounds = true
                 
         // Set view height according to screen
         if UIScreen.main.sizeType == .iPhone5 {
@@ -54,6 +61,10 @@ class PurchaseLanguageViewController: UIViewController {
     }
     
     @IBAction func language(_ sender: Any) {
+        
+    }
+    
+    @IBAction func restorePurchase(_ sender: Any) {
         
     }
     

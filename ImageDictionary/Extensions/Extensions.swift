@@ -9,58 +9,6 @@
 import Foundation
 import UIKit
 
-// For set upper corner radius of view
-extension UIView {
-    
-    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
-        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-        let mask = CAShapeLayer()
-        mask.path = path.cgPath
-        layer.mask = mask
-    }
-}
-
-// For set corner radius, border width and border color of view
-extension UIView {
-    
-    @IBInspectable
-    var cornerRadius: CGFloat {
-        get {
-            return layer.cornerRadius
-        }
-        set {
-            layer.cornerRadius = newValue
-        }
-    }
-    
-    @IBInspectable
-    var borderWidth: CGFloat {
-        get {
-            return layer.borderWidth
-        }
-        set {
-            layer.borderWidth = newValue
-        }
-    }
-    
-    @IBInspectable
-    var borderColor: UIColor? {
-        get {
-            if let color = layer.borderColor {
-                return UIColor(cgColor: color)
-            }
-            return nil
-        }
-        set {
-            if let color = newValue {
-                layer.borderColor = color.cgColor
-            } else {
-                layer.borderColor = nil
-            }
-        }
-    }
-}
-
 // For get screen size
 extension UIScreen {
     
@@ -85,7 +33,7 @@ extension UIScreen {
 }
 
 // For set LayoutConstraint of view according to screen size
-// Set the view or other things and set multiplier according to screen size
+// Set the view or other things and set multiplier according to screen size use this code in profile view controller, LanguageSaveViewController and PurchaseLanguageViewController
 extension NSLayoutConstraint {
     
     func setMultiplier(multiplier:CGFloat) -> NSLayoutConstraint {
